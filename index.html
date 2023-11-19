@@ -1,0 +1,112 @@
+<!-- Design a touch screen music jukebox, which allows the user to select from a 
+    menu of the five most popular songs of the week. Draw a sketch of this interface 
+    for each of the following menu types: Binary menu, Multiple-Item menu, 
+    Check boxes, Pull-down menus. Argue which design serves the user best.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Erin's Jukebox</title>
+</head>
+<body>
+    <h1 class="header">Erin's Jukebox</h1>
+    <p class="header"><u>Song Choices:</u><br/>
+        Lifted - Palmistry<br/>
+        Catch & Release - Matt Simons<br/>
+        Paint The Town Red - Doja Cat<br/>
+        Betty - Taylor Swift<br/>
+        Serotonin - girl in red<br/>
+    </p>
+    
+    <hr>
+
+    <div class="box">
+        <h2>Binary Menu</h2>
+            <form action="radio">
+                Lifted - Palmistry
+                <input type="radio" id="1" name="one">
+                <label for="1">Yes</label>
+                <input type="radio" id="2" name="one">
+                <label for="2">No</label></br>
+
+                Catch & Release - Matt Simons
+                <input type="radio" id="1" name="two">
+                <label for="1">Yes</label>
+                <input type="radio" id="2" name="two">
+                <label for="2">No</label></br>
+                
+                Paint The Town Red - Doja Cat
+                <input type="radio" id="1" name="three">
+                <label for="1">Yes</label>
+                <input type="radio" id="2" name="three">
+                <label for="2">No</label></br>
+                
+                Betty - Taylor Swift
+                <input type="radio" id="1" name="four">
+                <label for="1">Yes</label>
+                <input type="radio" id="2" name="four">
+                <label for="2">No</label></br>
+        
+                Serotonin - girl in red
+                <input type="radio" id="1" name="five">
+                <label for="1">Yes</label>
+                <input type="radio" id="2" name="five">
+                <label for="2">No</label></br>
+                <!-- <input type="radio" id="1" name="fav_song_radio">
+                <label for="1">Lifted - Palmistry</label><br>
+                <input type="radio" id="2" name="fav_song_radio">
+                <label for="2">Catch & Release - Matt Simons</label><br>
+                <input type="radio" id="3" name="fav_song_radio">
+                <label for="3">Paint The Town Red - Doja Cat</label><br>
+                <input type="radio" id="4" name="fav_song_radio">
+                <label for="4">Betty - Taylor Swifts</label><br>
+                <input type="radio" id="5" name="fav_song_radio">
+                <label for="5">Serotonin - girl in red</label><br> -->
+                <button>Submit</button>
+            </form>
+    </div>
+
+    <div class="box">
+        <h2>Multiple-Item Menu</h2>
+            <form action="multi-item">
+                <select multiple="5" class="multiple">
+                    <option>Lifted - Palmistry</option>
+                    <option>Catch & Release - Matt Simons</option>
+                    <option>Paint The Town Red - Doja Cat</option>
+                    <option>Betty - Taylor Swift</option>
+                    <option>Serotonin - girl in red</option>
+                </select></br>
+                <button>Submit</button>
+            </form>
+    </div>
+
+    <div class="box">
+        <h2>Check Boxes Menu</h2>
+            <form action="checkbox">
+                <input type="checkbox" name="fav_song_check">Lifted - Palmistry</input></br>
+                <input type="checkbox" name="fav_song_check">Catch & Release - Matt Simons</input></br>
+                <input type="checkbox" name="fav_song_check">Paint The Town Red - Doja Cat</input></br>
+                <input type="checkbox" name="fav_song_check">Betty - Taylor Swift</input></br>
+                <input type="checkbox" name="fav_song_check">Serotonin - girl in red</input></br>
+                <button>Submit</button>
+            </form>
+    </div>
+        
+    <div class="box">
+        <h2>Pull-Down Menu</h2>
+            <form action="pull-down">
+                <select>
+                    <option>Lifted - Palmistry</option>
+                    <option>Catch & Release - Matt Simons</option>
+                    <option>Paint The Town Red - Doja Cat</option>
+                    <option>Betty - Taylor Swift</option>
+                    <option>Serotonin - girl in red</option>
+                </select></br>
+                <button>Submit</button>
+            </form>
+    </div>
+</body>
+</html>
